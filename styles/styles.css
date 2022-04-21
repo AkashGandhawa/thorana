@@ -204,35 +204,43 @@ td{
 .container-lg{
     display: none;
 }
-.container-sm{
+.container-sm .content{
     display: block;
     position: absolute;
     top: 50% !important;
     left: 50% !important;
     transform: translate(-50%, -50%);
 }
-
 .container-sm h1,h2{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: lighter;
-    color: white;
     text-align: center;
 }
 .container-sm h1{
     font-size: 4em;
+    color: white;
+    text-shadow: 0px 0px 8px cyan;
+}
+.container-sm h1 > .br-b{
+    color: lightblue;
+}
+.container-sm h1 > .br-y{
+    color: lightyellow;
+}
+.container-sm h1 > .br-r{
+    color: lightcoral;
+}
+.container-sm h1 > .br-w{
+    color: whitesmoke;
+}
+.container-sm h1 > .br-o{
+    color: lightsalmon;
 }
 .container-sm h2{
     font-size: 2em;
+    color: yellow;
 }
 
-/*@media screen and (max-width: 759px), (min-height:539px){
-    .container-lg{
-        display: none;
-    }
-    .container-sm{
-        display: block;
-    }
-}*/
 
 @media screen and (min-width: 759px) and (min-height: 539px){
     .container-lg{

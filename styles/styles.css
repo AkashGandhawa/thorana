@@ -88,7 +88,6 @@ SOFTWARE.
 }
 
 body{
-    /*background: linear-gradient(to right, darkgray, black);*/
     background-color: black;
 }
 table{
@@ -100,7 +99,7 @@ table{
 }
 td{
     margin: 0px;
-    border: 1px solid transparent;/*gray;*/
+    border: 1px solid transparent;
 }
 
 .container{
@@ -181,7 +180,7 @@ td{
     margin: auto;
     background-color: gray;
     border-radius: 50%;
-    animation-duration: .2s;/*0.2s;*/
+    animation-duration: 0.2s;
     animation-iteration-count: infinite;
 }
 .led1{
@@ -234,6 +233,18 @@ td{
     top: 50% !important;
     left: 50% !important;
     transform: translate(-50%, -50%);
+    border: 1px solid darkturquoise;
+    background: radial-gradient(midnightblue, black);
+    padding: 8px 32px;
+    box-shadow: 0px 0px 32px darkcyan;
+}
+.container-sm footer{
+    color: antiquewhite;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: absolute;
+    top: 90% !important;
+    left: 0% !important;
+    width: 100%;
 }
 .container-sm h1,h2{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -264,7 +275,6 @@ td{
     font-size: 2em;
     color: yellow;
 }
-
 
 @media screen and (min-width: 759px) and (min-height: 539px){
     .container-lg{

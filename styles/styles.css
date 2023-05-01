@@ -1,7 +1,7 @@
 /*
 MIT License
 
-Copyright (c) 2022 Akash Gandhawa
+Copyright (c) 2023 Akash Gandhawa
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -23,72 +23,73 @@ SOFTWARE.
 */
 
 @keyframes animate1 {
-    0% {background-color: red;}
-    19% {background-color: red;}
-    21% {background-color: greenyellow;}
-    39% {background-color: greenyellow;}
-    41% {background-color: yellow;}
-    59% {background-color: yellow;}
-    61% {background-color: cyan;}
-    79% {background-color: cyan;}
-    81% {background-color: magenta;}
-    100% {background-color: magenta;}
+    0% {background-color: red; filter: drop-shadow(0px 0px 16px red);}
+    19% {background-color: red; filter: drop-shadow(0px 0px 16px red);}
+    21% {background-color: greenyellow; filter: drop-shadow(0px 0px 16px greenyellow);}
+    39% {background-color: greenyellow; filter: drop-shadow(0px 0px 16px greenyellow);}
+    41% {background-color: yellow; filter: drop-shadow(0px 0px 16px yellow);}
+    59% {background-color: yellow; filter: drop-shadow(0px 0px 16px yellow);}
+    61% {background-color: cyan; filter: drop-shadow(0px 0px 16px cyan);}
+    79% {background-color: cyan; filter: drop-shadow(0px 0px 16px cyan);}
+    81% {background-color: magenta; filter: drop-shadow(0px 0px 16px magenta);}
+    100% {background-color: magenta; filter: drop-shadow(0px 0px 16px magenta);}
 }
 
 @keyframes animate2 {
-    0% {background-color: magenta;}
-    19% {background-color: magenta;}
-    21% {background-color: red;}
-    39% {background-color: red;}
-    41% {background-color: greenyellow;}
-    59% {background-color: greenyellow;}
-    61% {background-color: yellow;}
-    79% {background-color: yellow;}
-    81% {background-color: cyan;}
-    100% {background-color: cyan;}
+    0% {background-color: magenta; filter: drop-shadow(0px 0px 16px magenta);}
+    19% {background-color: magenta; filter: drop-shadow(0px 0px 16px magenta);}
+    21% {background-color: red; filter: drop-shadow(0px 0px 16px red);}
+    39% {background-color: red; filter: drop-shadow(0px 0px 16px red);}
+    41% {background-color: greenyellow; filter: drop-shadow(0px 0px 16px greenyellow);}
+    59% {background-color: greenyellow; filter: drop-shadow(0px 0px 16px greenyellow);}
+    61% {background-color: yellow; filter: drop-shadow(0px 0px 16px yellow);}
+    79% {background-color: yellow; filter: drop-shadow(0px 0px 16px yellow);}
+    81% {background-color: cyan; filter: drop-shadow(0px 0px 16px cyan);}
+    100% {background-color: cyan; filter: drop-shadow(0px 0px 16px cyan);}
 }
 
 @keyframes animate3 {
-    0% {background-color: cyan;}
-    19% {background-color: cyan;}
-    21% {background-color: magenta;}
-    39% {background-color: magenta;}
-    41% {background-color: red;}
-    59% {background-color: red;}
-    61% {background-color: greenyellow;}
-    79% {background-color: greenyellow;}
-    81% {background-color: yellow;}
-    100% {background-color: yellow;}
+    0% {background-color: cyan; filter: drop-shadow(0px 0px 16px cyan);}
+    19% {background-color: cyan; filter: drop-shadow(0px 0px 16px cyan);}
+    21% {background-color: magenta; filter: drop-shadow(0px 0px 16px magenta);}
+    39% {background-color: magenta; filter: drop-shadow(0px 0px 16px magenta);}
+    41% {background-color: red; filter: drop-shadow(0px 0px 16px red);}
+    59% {background-color: red; filter: drop-shadow(0px 0px 16px red);}
+    61% {background-color: greenyellow; filter: drop-shadow(0px 0px 16px greenyellow)}
+    79% {background-color: greenyellow; filter: drop-shadow(0px 0px 16px greenyellow);}
+    81% {background-color: yellow; filter: drop-shadow(0px 0px 16px yellow);}
+    100% {background-color: yellow; filter: drop-shadow(0px 0px 16px yellow);}
 }
 
 @keyframes animate4 {
-    0% {background-color: yellow;}
-    19% {background-color: yellow;}
-    21% {background-color: cyan;}
-    39% {background-color: cyan;}
-    41% {background-color: magenta;}
-    59% {background-color: magenta;}
-    61% {background-color: red;}
-    79% {background-color: red;}
-    81% {background-color: greenyellow;}
-    100% {background-color: greenyellow;}
+    0% {background-color: yellow; filter: drop-shadow(0px 0px 16px yellow);}
+    19% {background-color: yellow; filter: drop-shadow(0px 0px 16px yellow);}
+    21% {background-color: cyan; filter: drop-shadow(0px 0px 16px cyan);}
+    39% {background-color: cyan; filter: drop-shadow(0px 0px 16px cyan);}
+    41% {background-color: magenta; filter: drop-shadow(0px 0px 16px magenta);}
+    59% {background-color: magenta; filter: drop-shadow(0px 0px 16px magenta);}
+    61% {background-color: red; filter: drop-shadow(0px 0px 16px red);}
+    79% {background-color: red; filter: drop-shadow(0px 0px 16px red);}
+    81% {background-color: greenyellow; filter: drop-shadow(0px 0px 16px greenyellow);}
+    100% {background-color: greenyellow; filter: drop-shadow(0px 0px 16px greenyellow);}
 }
 
 @keyframes animate5 {
-    0% {background-color: greenyellow;}
-    19% {background-color: greenyellow;}
-    21% {background-color: yellow;}
-    39% {background-color: yellow;}
-    41% {background-color: cyan;}
-    59% {background-color: cyan;}
-    61% {background-color: magenta;}
-    79% {background-color: magenta;}
-    81% {background-color: red;}
-    100% {background-color: red;}
+    0% {background-color: greenyellow; filter: drop-shadow(0px 0px 16px greenyellow);}
+    19% {background-color: greenyellow; filter: drop-shadow(0px 0px 16px greenyellow);}
+    21% {background-color: yellow; filter: drop-shadow(0px 0px 16px yellow);}
+    39% {background-color: yellow; filter: drop-shadow(0px 0px 16px yellow);}
+    41% {background-color: cyan; filter: drop-shadow(0px 0px 16px cyan);}
+    59% {background-color: cyan; filter: drop-shadow(0px 0px 16px cyan);}
+    61% {background-color: magenta; filter: drop-shadow(0px 0px 16px magenta);}
+    79% {background-color: magenta; filter: drop-shadow(0px 0px 16px magenta);}
+    81% {background-color: red; filter: drop-shadow(0px 0px 16px red);}
+    100% {background-color: red; filter: drop-shadow(0px 0px 16px red);}
 }
 
 body{
     background-color: black;
+    margin: 0px !important;
 }
 table{
     padding: 0px;
@@ -132,6 +133,40 @@ td{
     z-index: 1;
     filter: drop-shadow(0px 0px 8px gray)
 }
+.night-sky{
+    height: 50% !important;
+    width: 100% !important;
+    box-shadow: 0px -16px 16px black inset;
+    overflow: hidden;
+}
+.night-sky img, .night-lake img{
+    width: 100%;
+    height: auto;
+    filter: brightness(40%);
+}
+.moon img{
+    position: fixed;
+    top: 64px;
+    right: 64px;
+    width: 64px;
+    height: 64px;
+    filter: brightness(125%) drop-shadow(0px 0px 16px yellow);
+}
+.night-lake{
+    top: 50% !important;
+    width: 100% !important;
+    height: auto;
+    overflow: hidden;
+    filter: brightness(500%);
+}
+.lotus{
+    position: fixed;
+    bottom: 80px !important;
+    left: calc(50% - 160px) !important;
+    z-index: 1;
+    filter: drop-shadow(0px 0px 8px pink);
+}
+
 .b-flag{
     position: fixed;
     bottom: 56px !important;
@@ -175,10 +210,11 @@ td{
 }
 
 .led{
-    width: 12px;
-    height: 12px;
+    width: 10px;
+    height: 10px;
     margin: auto;
     background-color: gray;
+    border: 1px solid black;
     border-radius: 50%;
     animation-duration: 0.2s;
     animation-iteration-count: infinite;
@@ -235,14 +271,14 @@ td{
     transform: translate(-50%, -50%);
     border: 1px solid darkturquoise;
     background: radial-gradient(midnightblue, black);
-    padding: 8px 32px;
+    padding: 0px 32px;
     box-shadow: 0px 0px 32px darkcyan;
 }
 .container-sm footer{
     color: antiquewhite;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     position: absolute;
-    top: 90% !important;
+    top: 92% !important;
     left: 0% !important;
     width: 100%;
 }

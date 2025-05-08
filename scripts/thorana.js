@@ -36,3 +36,6 @@ window.onkeydown = (event) => {
 document.addEventListener('wheel', (event) => {
     event.preventDefault()
 },{passive:false})
+document.addEventListener('contextmenu', (event) => {
+    event.preventDefault();
+});

@@ -93,16 +93,15 @@ body{
 }
 table{
     padding: 0px;
-    margin: auto; /* Centers the whole structure cleanly */
+    margin: auto;
     border-collapse: collapse;
 }
 td{
     margin: 0px;
-    padding: 4px; /* Give cells constant shape */
+    padding: 4px;
     border: 1px solid transparent;
 }
 
-/* Make anchoring completely independent of device layout engine shifts */
 .anchor-cell {
     position: relative;
     overflow: visible;
@@ -118,7 +117,6 @@ td{
     overflow-x: auto;
 }
 
-/* Redefined assets based strictly on cell positioning context */
 .dharma-wheel{
     position: absolute; 
     left: 50%;
@@ -200,40 +198,6 @@ td{
     color: white;
     text-shadow: 0px 0px 8px yellow;
 }
-.night-sky{
-    height: 50% !important;
-    width: 100% !important;
-    box-shadow: 0px -16px 16px black inset;
-    overflow: hidden;
-}
-.night-sky img, .night-lake img{
-    width: 100%;
-    height: auto;
-    filter: brightness(40%);
-}
-.moon img{
-    position: fixed;
-    top: 64px;
-    right: 64px;
-    width: 64px;
-    height: 64px;
-    filter: brightness(125%) drop-shadow(0px 0px 16px yellow);
-}
-.night-lake{
-    top: 50% !important;
-    width: 100% !important;
-    height: auto;
-    overflow: hidden;
-    filter: brightness(500%);
-}
-.lotus{
-    position: fixed;
-    bottom: 80px !important;
-    left: calc(50% - 160px) !important;
-    z-index: 1;
-    filter: drop-shadow(0px 0px 8px pink);
-}
-
 .led{
     width: 10px;
     height: 10px;
@@ -285,63 +249,3 @@ td{
     background-color: orange;
     border-color: orange;
 }
-.container-lg{
-    display: none;
-}
-.container-sm .content{
-    display: block;
-    position: absolute;
-    top: 50% !important;
-    left: 50% !important;
-    transform: translate(-50%, -50%);
-    border: 1px solid darkturquoise;
-    background: radial-gradient(midnightblue, black);
-    padding: 0px 32px;
-    box-shadow: 0px 0px 32px darkcyan;
-}
-.container-sm footer{
-    color: antiquewhite;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    position: absolute;
-    top: 92% !important;
-    left: 0% !important;
-    width: 100%;
-}
-.container-sm h1,h2{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: lighter;
-    text-align: center;
-}
-.container-sm h1{
-    font-size: 4em;
-    color: white;
-    text-shadow: 0px 0px 8px cyan;
-}
-.container-sm h1 > .br-b{
-    color: lightblue;
-}
-.container-sm h1 > .br-y{
-    color: lightyellow;
-}
-.container-sm h1 > .br-r{
-    color: lightcoral;
-}
-.container-sm h1 > .br-w{
-    color: whitesmoke;
-}
-.container-sm h1 > .br-o{
-    color: lightsalmon;
-}
-.container-sm h2{
-    font-size: 2em;
-    color: yellow;
-}
-
-/* @media screen and (min-width: 759px) and (min-height: 539px){ */
-    .container-lg{
-        display: block !important;
-    }
-    .container-sm{
-        display: none !important;
-    }
-/* } */

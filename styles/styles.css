@@ -93,10 +93,8 @@ body{
 }
 table{
     padding: 0px;
-    margin: auto;
-    position: absolute;
-    left: calc(50% - 372px) !important;
-    bottom: 32px !important;
+    margin: 0px;
+    position: sticky;
 }
 td{
     margin: 0px;
@@ -106,32 +104,84 @@ td{
 .container{
     overflow: auto;
 }
+.scrl{
+    position: relative;
+    width: 100%;
+    overflow-y: hidden;
+    overflow-x: auto;
+}
+.imgs{
+    position: absolute;
+    width: 100%;
+    height: 100%;    
+}
 .base{
     width: 702px !important;
     height: 50px;
     background: linear-gradient(to right,rgb(64, 28, 8),rgb(96, 60, 40),rgb(64, 28, 8));
-    position: fixed;
-    top: calc(100% - 102px) !important;
-    left: calc(50% - 350px) !important;
+    position: absolute;
+    top: 436px !important;
+    left: calc(746px/2 - 350px) !important;
     box-shadow: 0px 0px 8px rgb(80, 0, 0);
     border-radius: 2px;
 }
 .statue{
     width: 180px !important;
     height: auto;
-    position: fixed;
-    top: calc(100% - 368px) !important;
-    left: calc(50% - 92px) !important;
+    position: absolute;
+    top: 172px !important;
+    left: calc(746px/2 - 92px) !important;
     border-radius: 24px;
     border: 1px solid darkblue;
     box-shadow: 0px 0px 16px darkcyan;
 }
 .dharma-wheel{
-    position: fixed; 
-    top: calc(100% - 520px) !important; 
-    left: calc(50% - 36px) !important;
+    position: absolute; 
+    left: calc(746px/2 - 36px) !important;
+    top: 16px !important;
     z-index: 1;
     filter: drop-shadow(0px 0px 8px gray)
+}
+.b-flag{
+    position: absolute;
+    top: 404px !important;
+    z-index: 1;
+    filter: drop-shadow(0px 0px 8px gray)
+}
+.b-flag-left{
+    left: calc(746px/2 - 284px) !important;
+}
+.b-flag-right{
+    left: calc(746px/2 + 168px) !important;
+}
+.bo{
+    filter: drop-shadow(0px 0px 8px gray);
+    position: absolute;
+    top: 296px !important;
+}
+.bo-l{
+    left: calc(746px/2 - 332px) !important;
+}
+.bo-r{
+    left: calc(746px/2 + 192px) !important;
+}
+.au-bo{
+    filter: drop-shadow(0px 0px 8px yellow);
+    position: absolute;
+    top: 108px !important;
+}
+.au-bo-l{
+    left: calc(746px/2 - 116px) !important;
+}
+.au-bo-r{
+    left: calc(746px/2 + 56px) !important;
+}
+.wish-txt{
+    text-align: center;
+    font-family: cursive;
+    font-size: x-large;
+    color: white;
+    text-shadow: 0px 0px 8px yellow;
 }
 .night-sky{
     height: 50% !important;
@@ -165,48 +215,6 @@ td{
     left: calc(50% - 160px) !important;
     z-index: 1;
     filter: drop-shadow(0px 0px 8px pink);
-}
-
-.b-flag{
-    position: fixed;
-    bottom: 56px !important;
-    z-index: 1;
-    filter: drop-shadow(0px 0px 8px gray)
-}
-.b-flag-left{
-    left: calc(50% - 284px) !important;
-}
-.b-flag-right{
-    left: calc(50% + 168px) !important;
-}
-.bo{
-    filter: drop-shadow(0px 0px 8px gray);
-    position: fixed;
-    top: calc(100% - 242px) !important;
-}
-.bo-l{
-    left: calc(50% - 332px) !important;
-}
-.bo-r{
-    left: calc(50% + 192px) !important;
-}
-.au-bo{
-    filter: drop-shadow(0px 0px 8px yellow);
-    position: fixed;
-    top: calc(100% - 432px) !important;
-}
-.au-bo-l{
-    left: calc(50% - 116px) !important;
-}
-.au-bo-r{
-    left: calc(50% + 56px) !important;
-}
-.wish-txt{
-    text-align: center;
-    font-family: cursive;
-    font-size: x-large;
-    color: white;
-    text-shadow: 0px 0px 8px yellow;
 }
 
 .led{
@@ -312,11 +320,11 @@ td{
     color: yellow;
 }
 
-@media screen and (min-width: 759px) and (min-height: 539px){
+/* @media screen and (min-width: 759px) and (min-height: 539px){ */
     .container-lg{
         display: block !important;
     }
     .container-sm{
         display: none !important;
     }
-}
+/* } */

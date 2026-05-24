@@ -22,20 +22,25 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 
-//Prevents zooming of the page
-window.onkeydown = (event) => {
-    const zoomKeys = ['+', '-', '=']
-    if (!event.ctrlKey) {
-        return
-    }else{
-        if (zoomKeys.includes(event.key)) {
-            event.preventDefault()
-        }
-    }
-}
-document.addEventListener('wheel', (event) => {
-    event.preventDefault()
-},{passive:false})
+// window.onkeydown = (event) => {
+//     const zoomKeys = ['+', '-', '=']
+//     if (!event.ctrlKey) {
+//         return
+//     }else{
+//         if (zoomKeys.includes(event.key)) {
+//             event.preventDefault()
+//         }
+//     }
+// }
+// document.addEventListener('wheel', (event) => {
+//     if (event.ctrlKey) {
+//         event.preventDefault();
+//         return;
+//     }
+//     if (Math.abs(event.deltaY) > Math.abs(event.deltaX)) {
+//         event.preventDefault();
+//     }
+// }, { passive: false });
 document.addEventListener('contextmenu', (event) => {
     event.preventDefault();
 });

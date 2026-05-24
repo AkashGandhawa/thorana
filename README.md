@@ -4,4 +4,4 @@
 
 This is a basic digital pandal designed for the Vesak Festival. It is based on HTML and CSS web technologies. This is free and open source software, under the [MIT license](LICENSE).
 
-[View Thorana 🪷](https://akashgandhawa.github.io/thorana/)
+[View Thorana 🪷](https://akashgandhawa.github.io/thorana/){:target="_blank"}

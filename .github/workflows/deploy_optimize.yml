@@ -33,7 +33,7 @@ jobs:
       # Install lightweight minifiers for HTML, CSS, and JS globally
       - name: Install Minification Tools
         run: |
-          npm install -g html-minifier cssnano postcss-cli terser uglify-js
+          npm install -g html-minifier cssnano clean-css-cli terser uglify-js
 
       # Create a clean "dist" (distribution) directory and optimize the files into it
       - name: Bundle and Compress Code

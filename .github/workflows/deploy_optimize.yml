@@ -1,0 +1,80 @@
+name: Deploy Optimized Site to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main # Triggers when you push code to your main branch
+  workflow_dispatch: # Allows you to manually trigger it
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  build-and-deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Source Code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-node: 20
+
+      # Install lightweight minifiers for HTML, CSS, and JS globally
+      - name: Install Minification Tools
+        run: |
+          npm install -g html-minifier cssnano postcss-cli terser uglify-js
+
+      # Create a clean "dist" (distribution) directory and optimize the files into it
+      - name: Bundle and Compress Code
+        run: |
+          mkdir dist
+          
+          # 1. Minify JavaScript files (e.g. scripts/thorana.js -> dist/scripts/thorana.js)
+          mkdir -p dist/scripts
+          if [ -f scripts/thorana.js ]; then
+            terser scripts/thorana.js --compress --mangle -o dist/scripts/thorana.js
+          fi
+
+          # 2. Minify CSS files (styles/styles.css -> dist/styles/styles.css)
+          mkdir -p dist/styles
+          if [ -f styles/styles.css ]; then
+            # Uses a simple npx cssnano wrapper tool to shrink your custom styles
+            npx cssnano styles/styles.css dist/styles/styles.css
+          fi
+
+          # 3. Copy asset images across safely to the distribution folder
+          if [ -d assets ]; then
+            cp -r assets dist/assets
+          fi
+          if [ -f favicon.ico ]; then
+            cp favicon.ico dist/
+          fi
+
+          # 4. Minify HTML files (Removes all spaces, linebreaks, and comment grids)
+          if [ -f index.html ]; then
+            html-minifier --collapse-whitespace --remove-comments --remove-optional-tags --remove-redundant-attributes --remove-script-type-attributes --minify-css true --minify-js true index.html -o dist/index.html
+          fi
+
+      - name: Setup GitHub Pages Environment
+        uses: actions/configure-pages@v4
+
+      # Upload ONLY the compiled "dist" directory instead of the whole workspace root
+      - name: Upload Build Artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './dist'
+
+      - name: Deploy Artifact to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

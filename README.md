@@ -6,4 +6,4 @@ This is a basic digital pandal designed for the Vesak Festival. It is based on H
 
 It is prepared as a Progressive Web App (PWA), so that you can install it in your device with a native appearance.
 
-![Project Screenshot](assets/scrshot.png)
+![Project Screenshot](assets/scrshot.jpeg)

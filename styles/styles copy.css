@@ -1,0 +1,275 @@
+/*
+MIT License
+
+Copyright (c) 2026 Akash Gandhawa
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+*/
+
+@keyframes animate1 {
+    0% {background-color: red; filter: drop-shadow(0px 0px 16px red);}
+    19% {background-color: red; filter: drop-shadow(0px 0px 16px red);}
+    21% {background-color: greenyellow; filter: drop-shadow(0px 0px 16px greenyellow);}
+    39% {background-color: greenyellow; filter: drop-shadow(0px 0px 16px greenyellow);}
+    41% {background-color: yellow; filter: drop-shadow(0px 0px 16px yellow);}
+    59% {background-color: yellow; filter: drop-shadow(0px 0px 16px yellow);}
+    61% {background-color: cyan; filter: drop-shadow(0px 0px 16px cyan);}
+    79% {background-color: cyan; filter: drop-shadow(0px 0px 16px cyan);}
+    81% {background-color: magenta; filter: drop-shadow(0px 0px 16px magenta);}
+    100% {background-color: magenta; filter: drop-shadow(0px 0px 16px magenta);}
+}
+
+@keyframes animate2 {
+    0% {background-color: magenta; filter: drop-shadow(0px 0px 16px magenta);}
+    19% {background-color: magenta; filter: drop-shadow(0px 0px 16px magenta);}
+    21% {background-color: red; filter: drop-shadow(0px 0px 16px red);}
+    39% {background-color: red; filter: drop-shadow(0px 0px 16px red);}
+    41% {background-color: greenyellow; filter: drop-shadow(0px 0px 16px greenyellow);}
+    59% {background-color: greenyellow; filter: drop-shadow(0px 0px 16px greenyellow);}
+    61% {background-color: yellow; filter: drop-shadow(0px 0px 16px yellow);}
+    79% {background-color: yellow; filter: drop-shadow(0px 0px 16px yellow);}
+    81% {background-color: cyan; filter: drop-shadow(0px 0px 16px cyan);}
+    100% {background-color: cyan; filter: drop-shadow(0px 0px 16px cyan);}
+}
+
+@keyframes animate3 {
+    0% {background-color: cyan; filter: drop-shadow(0px 0px 16px cyan);}
+    19% {background-color: cyan; filter: drop-shadow(0px 0px 16px cyan);}
+    21% {background-color: magenta; filter: drop-shadow(0px 0px 16px magenta);}
+    39% {background-color: magenta; filter: drop-shadow(0px 0px 16px magenta);}
+    41% {background-color: red; filter: drop-shadow(0px 0px 16px red);}
+    59% {background-color: red; filter: drop-shadow(0px 0px 16px red);}
+    61% {background-color: greenyellow; filter: drop-shadow(0px 0px 16px greenyellow)}
+    79% {background-color: greenyellow; filter: drop-shadow(0px 0px 16px greenyellow);}
+    81% {background-color: yellow; filter: drop-shadow(0px 0px 16px yellow);}
+    100% {background-color: yellow; filter: drop-shadow(0px 0px 16px yellow);}
+}
+
+@keyframes animate4 {
+    0% {background-color: yellow; filter: drop-shadow(0px 0px 16px yellow);}
+    19% {background-color: yellow; filter: drop-shadow(0px 0px 16px yellow);}
+    21% {background-color: cyan; filter: drop-shadow(0px 0px 16px cyan);}
+    39% {background-color: cyan; filter: drop-shadow(0px 0px 16px cyan);}
+    41% {background-color: magenta; filter: drop-shadow(0px 0px 16px magenta);}
+    59% {background-color: magenta; filter: drop-shadow(0px 0px 16px magenta);}
+    61% {background-color: red; filter: drop-shadow(0px 0px 16px red);}
+    79% {background-color: red; filter: drop-shadow(0px 0px 16px red);}
+    81% {background-color: greenyellow; filter: drop-shadow(0px 0px 16px greenyellow);}
+    100% {background-color: greenyellow; filter: drop-shadow(0px 0px 16px greenyellow);}
+}
+
+@keyframes animate5 {
+    0% {background-color: greenyellow; filter: drop-shadow(0px 0px 16px greenyellow);}
+    19% {background-color: greenyellow; filter: drop-shadow(0px 0px 16px greenyellow);}
+    21% {background-color: yellow; filter: drop-shadow(0px 0px 16px yellow);}
+    39% {background-color: yellow; filter: drop-shadow(0px 0px 16px yellow);}
+    41% {background-color: cyan; filter: drop-shadow(0px 0px 16px cyan);}
+    59% {background-color: cyan; filter: drop-shadow(0px 0px 16px cyan);}
+    61% {background-color: magenta; filter: drop-shadow(0px 0px 16px magenta);}
+    79% {background-color: magenta; filter: drop-shadow(0px 0px 16px magenta);}
+    81% {background-color: red; filter: drop-shadow(0px 0px 16px red);}
+    100% {background-color: red; filter: drop-shadow(0px 0px 16px red);}
+}
+
+body{
+    background-color: black;
+    margin: 0px !important;
+}
+table{
+    padding: 0px;
+    margin: auto;
+    border-collapse: collapse;
+}
+td{
+    margin: 0px;
+    padding: 4px;
+    border: 1px solid transparent;
+}
+img{
+    pointer-events: none;
+    user-select: none; 
+    -webkit-user-drag: none; 
+    -webkit-touch-callout: none;
+}
+
+.anchor-cell {
+    position: relative;
+    overflow: visible;
+}
+
+.container{
+    overflow: auto;
+}
+.scrl{
+    position: relative;
+    width: 100%;
+    overflow-y: hidden;
+    overflow-x: auto;
+}
+
+.dharma-wheel{
+    position: absolute; 
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    transform: translateX(-4%);
+    top: -6px;
+    z-index: 1;
+    filter: drop-shadow(0px 0px 8px gray);
+}
+.statue{
+    width: 208px !important;
+    height: auto;
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 24px;
+    border: 1px solid darkblue;
+    box-shadow: 0px 0px 16px darkcyan;
+    z-index: 2;
+}
+.base{
+    width: 232% !important;
+    height: 56px;
+    background: linear-gradient(to right,rgb(64, 28, 8),rgb(96, 60, 40),rgb(64, 28, 8));
+    position: absolute;
+    top: 4px; 
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0px 0px 8px rgb(80, 0, 0);
+    border-radius: 2px;
+    z-index: -1;
+}
+.b-flag{
+    position: absolute;
+    top: 106px;
+    z-index: 2;
+    filter: drop-shadow(0px 0px 8px gray);
+}
+.b-flag-left{
+    left: 72px;
+}
+.b-flag-right{
+    right: 72px;
+}
+.bo{
+    filter: drop-shadow(0px 0px 8px gray);
+    position: absolute;
+    top: -12px;
+    width: 160px;
+    height: auto;
+    z-index: 1;
+}
+.bo-l{
+    left: 24px;
+}
+.bo-r{
+    right: 24px;
+}
+.au-bo{
+    filter: drop-shadow(0px 0px 8px yellow);
+    position: absolute;
+    top: 104px;
+    width: 64px;
+    z-index: 1;
+}
+.au-bo-l{
+    left: -64px;
+}
+.au-bo-r{
+    right: -152px;
+}
+.wish-txt{
+    text-align: center;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: xx-large;
+    font-variant: small-caps;
+    color: white;
+    text-shadow: 0px 0px 8px yellow;
+
+    pointer-events: none;
+    user-select: none; 
+    -webkit-user-drag: none; 
+    -webkit-touch-callout: none;
+    cursor: default;
+}
+.led{
+    width: 10px;
+    height: 10px;
+    margin: auto;
+    background-color: gray;
+    border: 1px solid black;
+    border-radius: 50%;
+    animation-duration: 0.2s;
+    animation-iteration-count: infinite;
+}
+.led1{
+    animation-name: animate1;
+}
+.led2{
+    animation-name: animate2;
+}
+.led3{
+    animation-name: animate3;
+}
+.led4{
+    animation-name: animate4;
+}
+.led5{
+    animation-name: animate5;
+}
+.ml{
+    margin-left: 4px;
+}
+.mr{
+    margin-right: 4px;
+}
+.white{
+    background-color: white;
+    border-color: white;
+}
+.red{
+    background-color: red;
+    border-color: red;
+}
+.yellow{
+    background-color: yellow;
+    border-color: yellow;
+}
+.blue{
+    background-color: cyan;
+    border-color: cyan;
+}
+.orange{
+    background-color: orange;
+    border-color: orange;
+}
+
+.visually-hidden {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+}

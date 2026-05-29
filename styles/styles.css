@@ -101,6 +101,12 @@ td{
     padding: 4px;
     border: 1px solid transparent;
 }
+img{
+    pointer-events: none;
+    user-select: none; 
+    -webkit-user-drag: none; 
+    -webkit-touch-callout: none;
+}
 
 .anchor-cell {
     position: relative;
@@ -197,6 +203,12 @@ td{
     font-variant: small-caps;
     color: white;
     text-shadow: 0px 0px 8px yellow;
+
+    pointer-events: none;
+    user-select: none; 
+    -webkit-user-drag: none; 
+    -webkit-touch-callout: none;
+    cursor: default;
 }
 .led{
     width: 10px;
